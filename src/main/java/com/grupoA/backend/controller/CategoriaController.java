@@ -7,12 +7,14 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+
 @RestController
 @RequestMapping("/api/categorias")
 public class CategoriaController {
-    
+
     @Autowired
     private CategoriaService categoriaService;
+
 
     @GetMapping
     public List<Categoria> listar() {
